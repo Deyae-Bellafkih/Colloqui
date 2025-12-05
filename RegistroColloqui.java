@@ -16,6 +16,7 @@ public class RegistroColloqui {
         return false;
     }
 
+
     public boolean cancellaPrenotazione(String nomeGenitore, String nomeFiglio) {
         for (int i = 0; i < prenotazioni.length; i++) {
             if (prenotazioni[i] != null && prenotazioni[i].getNomeGenitore().equals(nomeGenitore) && prenotazioni[i].getNomeFiglio().equals(nomeFiglio)) {
@@ -27,13 +28,18 @@ public class RegistroColloqui {
     }
 
     public boolean isSlotPrenotato(int slot) {
-        for (Colloquio colloquio : prenotazioni) {
-            if (colloquio != null && colloquio.getSlot() == slot) {
+        for (int i = 0; i < prenotazioni.length; i++) {
+            if (prenotazioni[i] != null && prenotazioni[i].getSlot() == slot) {
                 return true;
             }
         }
         return false;
     }
+
+
+
+
+
 
 
 

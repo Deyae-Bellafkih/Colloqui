@@ -20,10 +20,6 @@ public class Colloquio {
         return nomeFiglio;
     }
 
-    public String getClasse() {
-        return classe;
-    }
-
     public int getSlot() {
         return slot;
     }
