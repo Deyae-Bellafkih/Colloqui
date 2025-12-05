@@ -34,4 +34,13 @@ public class RegistroColloqui {
         }
         return false;
     }
+
+    public int proponiSlotLibero() {
+        for (int i = 1; i <= 4; i++) {
+            if (!isSlotPrenotato(i)) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
