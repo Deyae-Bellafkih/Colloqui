@@ -23,7 +23,4 @@ public class Colloquio {
     public int getSlot() {
         return slot;
     }
-
-
-
 }
